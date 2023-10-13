@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Header Button</title>
   </head>
@@ -20,8 +21,18 @@
       </div>
       <div class="header">
         <div class="menu-container">
-          <a class="header-button">Shop</a>
-          <a href="/" >Story</a>
+          <ul >
+            
+            <li class="dropdown" id="pinkButton">
+                <a href="#" >Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><span class="heading" style="font-family: Lato; ">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></span></a></li>
+                    <li><a href="#"><span class="heading" style="font-family: Lato; font-weight: 400;">SPICED BLEND  <span style="font-family: cursive; font-weight: 300;">made with </span><span>CaribbeaN Rum</span></span></a></li>
+                    <li><a href="project3.html"><span class="heading" style="font-family: Lato; font-weight: 400;">APERITIF <span style="font-family: cursive; font-weight: 300;">made with </span><span>Heritage Botanicals</span></span></a></li>
+                </ul>
+            </li>
+            <li><a href="#">Home</a></li>
+        </ul>
         </div>
         <div class="logo">
           <a href="#">DECEM</a>
@@ -30,7 +41,7 @@
           <p>Cart</p>
         </div>
       </div>
-      <div class="body-container">
+      <div class="body-container" id="body-container">
         <div class="img-container">
           <div class="img-border">
             <img id="image"
@@ -117,9 +128,8 @@
       </div>
    
       <div class="overlay">
-        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
-        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
-        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
+        <div class="menu-item-container"></div>
+        <div class="menu-item-container"></div>
       </div>
     </header>
     <div class="radio-container">

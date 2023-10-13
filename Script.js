@@ -1,15 +1,14 @@
-const headerButtons = document.querySelectorAll(".header-button");
-const overlay = document.querySelector(".overlay");
+const pinkButton = document.getElementById('pinkButton');
+const body = document.getElementById('body-container');
 
-headerButtons.forEach((button) => {
-  button.addEventListener("mouseover", () => {
-    overlay.style.display = "block";
-  });
+// Function to toggle the pink-background class
+function togglePinkBackground() {
+    body.classList.toggle('pink-background');
+}
 
-  button.addEventListener("mouseout", () => {
-    overlay.style.display = "none";
-  });
-});
+// Event listeners
+pinkButton.addEventListener('mouseenter', togglePinkBackground);
+pinkButton.addEventListener('mouseleave', togglePinkBackground);
 
 const accordion = document.getElementsByClassName("contentBx");
 
