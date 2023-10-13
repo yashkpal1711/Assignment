@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Header Button</title>
   </head>
@@ -17,11 +20,11 @@
       </div>
       <div class="header">
         <div class="menu-container">
-          <p class="header-button">Shop</p>
-          <p class="header-button">Story</p>
+          <a class="header-button">Shop</a>
+          <a href="/" >Story</a>
         </div>
         <div class="logo">
-          <h1>DECEM</h1>
+          <a href="#">DECEM</a>
         </div>
         <div class="cart">
           <p>Cart</p>
@@ -50,8 +53,8 @@
                 </ul>
               </nav>
               <h4 class="product-form-title">
-                <strong> Spiced Blend </strong> <em></em> <br />
-                <em>made with</em> Caribbean Rum
+                <strong style="font-family: Lato;"> Spiced Blend </strong> <em></em> <br />
+                <em style="font-family: Dancing Script">made with</em> <em style="font-family: Baskerville ">Caribbean Rum</em> 
               </h4>
               <div class="grid-x product-details f-text">
                 <div class="cell small-6">
@@ -114,9 +117,9 @@
       </div>
    
       <div class="overlay">
-        <div class="menu-item-container"><h1 class="heading">heading1</h1></div>
-        <div class="menu-item-container"><h1 class="heading">heading1</h1></div>
-        <div class="menu-item-container"><h1 class="heading">heading1</h1></div>
+        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
+        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
+        <div class="menu-item-container"><h1 class="heading" style="font-family: Lato;">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></h1></div>
       </div>
     </header>
     <div class="radio-container">
@@ -139,5 +142,5 @@
     </div>
 
   </body>
-  <script src="script.js"></script>
+  <script src="./Script.js"></script>
 </html>

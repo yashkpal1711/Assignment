@@ -3,6 +3,7 @@ body{
     box-sizing: border-box;
     font-family: acumin-pro,sans-serif;
     height: 100vh;
+    scroll-behavior: smooth;
     /* overflow: hidden; */
 }
 .announcement{
@@ -22,12 +23,12 @@ body{
     display: flex;
     align-items: center;
 }
-.menu-container > p{
+.menu-container > a{
     margin-left: 10px;
     font-size: 1.5rem;
     
 }
-.menu-container > p:first-child{
+.menu-container > a:first-child{
   margin-left: 20px;
   
 }
@@ -35,7 +36,7 @@ body{
   display: flex;
   align-items: center;
 }
-.logo >h1{
+.logo >a{
   font-size: 2.5rem;
   letter-spacing: -4px;
 }
@@ -77,6 +78,10 @@ body{
   width: 55vw;
   justify-content: center;
 }
+.radio-container >input{
+  margin-right: 5px;
+}
+
 
 .body-container{
   display: flex; 
@@ -100,7 +105,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(222, 215, 215, 0.763);
     display: none;
     align-items: center;
     justify-content: center;
@@ -215,10 +220,14 @@ button:hover {
 }
 .menu-item-container{
   height: 100px;
-  background-color: green;
-  border-bottom: 3px solid white;
+  background-color: white;
+  border-bottom: 3px solid black;
+}
+.menu-item-container .heading{
+  font-size: 2rem;
+  font-weight: 600;
 }
 .menu-item-container:first-child{
-  margin-top: 64px;
+  margin-top: 4.2rem;
   
 }
