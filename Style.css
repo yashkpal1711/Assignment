@@ -58,15 +58,24 @@ body{
   align-items: center;
 }
 .img-border{
+  width: 60%;
   display: flex; 
   border: 1px solid black;
   border-radius: 50%;
   padding: 100px;
+  justify-content: center;
   margin-top: 5rem;
 }
 .img-border > img{
-  height: 70vh;
+  width: auto; /* Allow the image to scale proportionally */
+  height: auto;
   padding: 20px 40px;
+}
+.radio-container{
+  margin-top: 5px;
+  display: flex;
+  width: 55vw;
+  justify-content: center;
 }
 
 .body-container{
@@ -142,6 +151,7 @@ h5, .h5 {
 .product-buy {
   width: 100%;
 }
+
 button {
   cursor: pointer;
 }
@@ -154,29 +164,41 @@ button:hover {
   margin-top: 10px;
   color: #2455f6;
 }
-.product-accordions {
-  margin-top: 25px;
+.accordion{
+  width: 100%;;
 }
-.accordion {
-  padding: 12px 45px 12px 0;
-  border-top: 1px solid #1d1d1b;
-  border-bottom: 1px solid #1d1d1b;
-  margin-bottom: -1px;
+
+.accordion,.contentBx{
   position: relative;
+  margin: 10px 20px;
 }
-.accordion .answer {
-  display: none;
-  padding: 15px 0 10px;
+
+.accordion .contentBx .label{
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
 }
-.accordion.open:before {
-  opacity: 0;
+
+.accordion .contentBx .label::before
+{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: all .4s ease; 
+  font-size: 1.5em;
 }
-.accordion:before {
-  width: 1px;
-  height: 20px;
-  right: 10px;
+
+.accordion .contentBx .content{
+  position: relative;
+  background:#fff;
+  height: 0;
+  overflow: hidden;
+  transition:0.5s ease-in-out;
+  overflow-y: auto;
 }
-.accordion:after, .accordion:before {
+.contentBx:after, .contentBx:before {
   transition: all .5s ease;
   content: "";
   position: absolute;
@@ -184,26 +206,12 @@ button:hover {
   transform: translateY(-50%);
   background: #1d1d1b;
 }
-*, ::after, ::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-.accordion:after {
-  width: 20px;
-  height: 1px;
-  right: 0;
-}
-.accordion:after, .accordion:before {
-  transition: all .5s ease;
-  content: "";
-  position: absolute;
-  top: 25px;
-  transform: translateY(-50%);
-  background: #1d1d1b;
-}
-*, ::after, ::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+
+.accordion .contentBx.active .content{
+  height: max-content;
+  transition: all .4s ease;
+  scroll-behavior: smooth;
+
 }
 .menu-item-container{
   height: 100px;
