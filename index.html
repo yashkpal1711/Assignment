@@ -24,22 +24,24 @@
           <ul >
             
             <li class="dropdown" id="pinkButton">
-                <a href="#" >Projects</a>
+                <a href="#" >Shop</a>
                 <ul class="dropdown-menu">
                     <li><a href="#"><span class="heading" style="font-family: Lato; ">LONDON DRY <span style="font-family: cursive; font-weight: 300;">made with </span><span>British Gin</span></span></a></li>
                     <li><a href="#"><span class="heading" style="font-family: Lato; font-weight: 400;">SPICED BLEND  <span style="font-family: cursive; font-weight: 300;">made with </span><span>CaribbeaN Rum</span></span></a></li>
-                    <li><a href="project3.html"><span class="heading" style="font-family: Lato; font-weight: 400;">APERITIF <span style="font-family: cursive; font-weight: 300;">made with </span><span>Heritage Botanicals</span></span></a></li>
+                    <li><a href="#"><span class="heading" style="font-family: Lato; font-weight: 400;">APERITIF <span style="font-family: cursive; font-weight: 300;">made with </span><span>Heritage Botanicals</span></span></a></li>
                 </ul>
             </li>
-            <li><a href="#">Home</a></li>
+            <li><a href="#">Story</a></li>
         </ul>
         </div>
         <div class="logo">
           <a href="#">DECEM</a>
         </div>
-        <div class="cart">
-          <p>Cart</p>
-        </div>
+        <div class="shopping">
+          <span style="font-size: 25px; cursor: pointer;"><strong>Basket (</strong></span>
+          <span class="quantity" style="font-size: 25px;">0</span>
+          <span style="font-size: 25px;"><strong>) </strong></span>
+      </div>
       </div>
       <div class="body-container" id="body-container">
         <div class="img-container">
@@ -55,12 +57,12 @@
             <div class="product-form-nav show-desktop">
               <nav>
                 <ul class="product-nav-ul">
-                  <li><a href="/products/london-dry">London Dry</a></li>
+                  <li><a href="#">London Dry</a></li>
                   <li class="active">
-                    <a href="/products/spiced-blend">Spiced Blend</a>
+                    <a href="#">Spiced Blend</a>
                   </li>
-                  <li><a href="/products/aperitif">Aperitif</a></li>
-                  <li><a href="/products/trio">Trio</a></li>
+                  <li><a href="#">Aperitif</a></li>
+                  <li><a href="#">Trio</a></li>
                 </ul>
               </nav>
               <h4 class="product-form-title">
@@ -83,6 +85,7 @@
                 class="id"
               />
               <button
+                id="addCart"
                 data-item="Spiced Blend"
                 type="submit"
                 class="cta f-text product-buy add-to-cart add-to-cart-button"
@@ -149,6 +152,24 @@
         name="image"
         value="https://decemdrinks.com/cdn/shop/products/SpicedBlend_Back_1024x1024.png?v=1659602678"
       />
+    </div>
+    <div class="list">
+            <!--CART  -->
+    </div>
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 25px;">Basket</span>
+          <span id="closeCart" style="font-size: 35px; margin-right: 15px; cursor: pointer;">x</span>
+        </div>
+        
+        <h3 style="font-size: 20px; font-family: cursive;">Congratulations! You've got free delivery</h3>
+        <ul class="listCard">  
+        </ul>
+        <div class="checkOut">
+            
+            <div class="total"> 0</div>
+            <div class="closeShopping"><a href="#" class="myButton">Checkout</a></div>
+        </div>
     </div>
 
   </body>
