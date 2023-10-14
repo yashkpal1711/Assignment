@@ -412,10 +412,7 @@ header .shopping{
 
 
 .myButton {
-	box-shadow:inset 0px -1px 0px 0px #f5978e;
-	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
-	background-color:#000000;
-	border-radius:28px;
+  border-radius: 20px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
